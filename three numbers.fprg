@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="three numbers"/>
+        <attribute name="authors" value="cp5crt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-11 09:59:54 AM"/>
+        <attribute name="created" value="Y3A1Y3J0O0FNVEQyMDQtMjU7MjAyNS0xMi0xMTswOTo0ODo0NCBBTTsyNDU3"/>
+        <attribute name="edited" value="Y3A1Y3J0O0FNVEQyMDQtMjU7MjAyNS0xMi0xMTswOTo1OTo1NCBBTTsxOzI1Njg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumA, NumB, NumC" type="Integer" array="False" size=""/>
+            <output expression="&quot;pls enter first number&quot;" newline="True"/>
+            <input variable="NumA"/>
+            <output expression="&quot;pls enter second number&quot;" newline="True"/>
+            <input variable="NumB"/>
+            <output expression="&quot;pls enter last numer&quot;" newline="True"/>
+            <input variable="NumC"/>
+            <if expression="NumA &gt; NumB or NumA &gt; NumC">
+                <then>
+                    <output expression="&quot;this is the bigger number: &quot; &amp; NumA" newline="True"/>
+                </then>
+                <else>
+                    <if expression="NumB &gt; NumC">
+                        <then>
+                            <output expression="&quot;this is the bigger number: &quot; &amp; NumB" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;this is the bigger number: &quot; &amp; NumC" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

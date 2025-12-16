@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="guessing game"/>
+        <attribute name="authors" value="cp5crt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-11 10:21:13 AM"/>
+        <attribute name="created" value="Y3A1Y3J0O0FNVEQyMDQtMjU7MjAyNS0xMi0xMTsxMDowMDowNiBBTTsyNDM1"/>
+        <attribute name="edited" value="Y3A1Y3J0O0FNVEQyMDQtMjU7MjAyNS0xMi0xMTsxMDoyMToxMyBBTTsyOzI1NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number, guess, closeness, attempts" type="Integer" array="False" size=""/>
+            <assign variable="number" expression="random(50)"/>
+            <assign variable="attempts" expression="0"/>
+            <do expression="guess != number OR attempts &gt;= 4">
+                <output expression="&quot;guess a number&quot;" newline="True"/>
+                <input variable="guess"/>
+                <assign variable="attempts" expression="attempts + 1"/>
+                <if expression="guess &lt; number">
+                    <then>
+                        <output expression="&quot;too low&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;too high&quot;" newline="True"/>
+                    </else>
+                </if>
+            </do>
+            <if expression="attempts &gt;= 4">
+                <then>
+                    <output expression="&quot;You LOOOOSE!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;correct&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

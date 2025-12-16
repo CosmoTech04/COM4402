@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="shopping cart"/>
+        <attribute name="authors" value="cp5crt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-11 09:48:18 AM"/>
+        <attribute name="created" value="Y3A1Y3J0O0FNVEQyMDQtMjU7MjAyNS0xMi0xMTswOToyMjoyNyBBTTsyNDUw"/>
+        <attribute name="edited" value="Y3A1Y3J0O0FNVEQyMDQtMjU7MjAyNS0xMi0xMTswOTo0ODoxOCBBTTsxOzI1NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price, total, currprice, discount, finalPrice, newPrice" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter price of item pls&quot;" newline="True"/>
+            <input variable="currprice"/>
+            <assign variable="total" expression="0"/>
+            <while expression="currprice != 0">
+                <assign variable="total" expression="total + currprice"/>
+                <output expression="total" newline="True"/>
+                <output expression="&quot;please enter price again&quot;" newline="True"/>
+                <input variable="newPrice"/>
+                <assign variable="currprice" expression="newPrice"/>
+            </while>
+            <if expression="total &gt; 100">
+                <then>
+                    <assign variable="discount" expression="total / 10"/>
+                    <assign variable="finalPrice" expression="total - discount"/>
+                    <output expression="finalPrice" newline="True"/>
+                </then>
+                <else>
+                    <output expression="total" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

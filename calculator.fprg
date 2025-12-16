@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="calculator"/>
+        <attribute name="authors" value="cp5crt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-09 02:51:02 PM"/>
+        <attribute name="created" value="Y3A1Y3J0O0FNVEQyMDQtMjQ7MjAyNS0xMi0wOTswMTo1Mzo0OCBQTTsyNDcw"/>
+        <attribute name="edited" value="Y3A1Y3J0O0FNVEQyMDQtMjQ7MjAyNS0xMi0wOTswMjo1MTowMiBQTTsxOzI1Njc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="validOp" type="Boolean" array="False" size=""/>
+            <assign variable="validOp" expression="true"/>
+            <declare name="operation" type="String" array="False" size=""/>
+            <declare name="numA, numB, result" type="Integer" array="False" size=""/>
+            <output expression="&quot;input first number&quot;" newline="True"/>
+            <input variable="numA"/>
+            <output expression="&quot;input second number&quot;" newline="True"/>
+            <input variable="numB"/>
+            <do expression="validOp == false">
+                <output expression="&quot;choose a operation&quot;" newline="True"/>
+                <input variable="operation"/>
+                <if expression="operation == &quot;-&quot; or operation == &quot;+&quot; or operation == &quot;/&quot; or operation == &quot;x&quot;">
+                    <then>
+                        <assign variable="validOp" expression="true"/>
+                    </then>
+                    <else>
+                        <assign variable="validOp" expression="false"/>
+                        <output expression="&quot;Chosen op is invalid. Try again...&quot;" newline="True"/>
+                    </else>
+                </if>
+            </do>
+            <if expression="operation = &quot;+&quot;">
+                <then>
+                    <assign variable="result" expression="numA + numB"/>
+                    <output expression="result" newline="True"/>
+                </then>
+                <else>
+                    <if expression="operation = &quot;-&quot;">
+                        <then>
+                            <assign variable="result" expression="numA - numB"/>
+                            <output expression="result" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="operation =&quot;/&quot;">
+                                <then>
+                                    <assign variable="result" expression="numA &#247; numB"/>
+                                    <output expression="result" newline="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="result" expression="numA &#215; numB"/>
+                                    <output expression="result" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
