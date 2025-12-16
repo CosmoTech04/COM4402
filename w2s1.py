@@ -15,3 +15,4 @@ quantity = int(input("Enter Quantity:"))
 total_cost = price * quantity
 print("You bought", quantity, "of", name)
 print("Total Cost is", total_cost)
+
