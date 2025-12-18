@@ -73,8 +73,8 @@
 #     print("go")
 # else:
 #     print("invalid colour")
-
-#number 8
+#
+# #number 8
 # number = int(input("enter number"))
 # if (number % 3) == 0 and (number % 5) == 0 and number != 0:
 #     print("FizzBuzz")
@@ -125,16 +125,32 @@
 # else:
 #     print("wrong pin")
 
-#number 12
-weather = str(input("enter weather")).lower()
-mood = str(input("enter mood")).lower()
-if weather == "sunny" and mood == "active":
-    print("go for a run")
-elif weather == "sunny" and mood == "tired":
-    print("relax in park")
-elif weather == "rainy":
-    print("indoor workout")
-elif weather == "cold":
-    print("gym tyme")
-else:
-    print("no suggestion available")
+# #number 12
+# weather = str(input("enter weather")).lower()
+# mood = str(input("enter mood")).lower()
+# if weather == "sunny" and mood == "active":
+#     print("go for a run")
+# elif weather == "sunny" and mood == "tired":
+#     print("relax in park")
+# elif weather == "rainy":
+#     print("indoor workout")
+# elif weather == "cold":
+#     print("gym tyme")
+# else:
+#     print("no suggestion available")
+
+#number 13
+
+choice = int(input("select one of the options(1,2,3 or 4)\n"))
+
+match choice:
+    case 1:
+        print("option 1...")
+    case 2:
+        print("option 2")
+    case 3:
+        print("option 3")
+    case 4:
+        print("option 4")
+    case _:
+        print("invalid option")
