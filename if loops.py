@@ -25,10 +25,10 @@
 #     print("child ticket")
 # elif 18 >= age <= 64:
 #     print("adult ticket")
-# else
+# else:
 #     print("senior ticket")
-
-#number 4
+#
+# #number 4
 # days_late = int(input("enter days late"))
 # if days_late = 0:
 #     print("no fine")
@@ -75,15 +75,15 @@
 #     print("invalid colour")
 #
 # #number 8
-# number = int(input("enter number"))
-# if (number % 3) == 0 and (number % 5) == 0 and number != 0:
-#     print("FizzBuzz")
-# elif (number % 3) == 0 and number != 0:
-#     print("Fizz")
-# elif (number % 5) == 0 and number != 0:
-#     print("Buzz")
-# else:
-#     print("no match")
+number = int(input("enter number"))
+if (number % 3) == 0 and (number % 5) == 0 and number != 0:
+    print("FizzBuzz")
+elif (number % 3) == 0 and number != 0:
+    print("Fizz")
+elif (number % 5) == 0 and number != 0:
+    print("Buzz")
+else:
+    print("no match")
 
 # number 9
 #
@@ -141,16 +141,16 @@
 
 #number 13
 
-choice = int(input("select one of the options(1,2,3 or 4)\n"))
-
-match choice:
-    case 1:
-        print("option 1...")
-    case 2:
-        print("option 2")
-    case 3:
-        print("option 3")
-    case 4:
-        print("option 4")
-    case _:
-        print("invalid option")
+# choice = int(input("select one of the options(1,2,3 or 4)\n"))
+#
+# match choice:
+#     case 1:
+#         print("option 1...")
+#     case 2:
+#         print("option 2")
+#     case 3:
+#         print("option 3")
+#     case 4:
+#         print("option 4")
+#     case _:
+#         print("invalid option")
