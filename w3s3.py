@@ -57,9 +57,7 @@ for i in range(rows):
 #     print()
 # problem 10
 # import math
-#
 # rows = 5
-#
 # for i in range(rows):
 #     for j in range(i + 1):
 #         print(math.comb(i, j), end=" ")
