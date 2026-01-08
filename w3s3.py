@@ -1,0 +1,37 @@
+# problem 1
+# for i in range(1, 6):  # outer loop
+#     for j in range(i): # inner loop
+#         print("*", end="")
+#     print()
+# problem 2
+# for i in range(1, 6):
+#     for j in range(i):
+#         print(i, end="")
+#     print()
+# problem 3
+# num = 1
+# for i in range(1, 5):
+#     for j in range(i):
+#         print(num, end="")
+#         num += 1
+#     print()
+# problem 4
+# for i in range(1, 6):
+#     for j in range(1, 6):
+#         print(i*j, end=" ")
+#     print()
+# problem 5
+# for i in range(3):
+#     for j in range(4):
+#         print(f"({i},{j})", end=" ")
+#     print()
+# problem 6
+# size = 5
+# for i in range(size):
+#     line = ""
+#     for j in range(size):
+#         if i == 0 or i == size - 1 or j == 0 or j == size - 1:
+#             line += "*"
+#         else:
+#             line += " "
+#     print(line)
