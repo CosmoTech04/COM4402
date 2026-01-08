@@ -36,10 +36,10 @@
 #             line += " "
 #     print(line)
 #problem 7
-# rows = 4
-# for i in range(rows):
-#     print(" " * (rows - i - 1), end="")
-#     print("*" * (2 * i + 1))
+rows = 4
+for i in range(rows):
+    print(" " * (rows - i - 1), end="")
+    print("*" * (2 * i + 1))
 # problem 8
 # for j in range(1, 6):
 #     for i in range(2, 5):
