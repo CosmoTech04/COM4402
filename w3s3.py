@@ -35,3 +35,32 @@
 #         else:
 #             line += " "
 #     print(line)
+#problem 7
+# rows = 4
+# for i in range(rows):
+#     print(" " * (rows - i - 1), end="")
+#     print("*" * (2 * i + 1))
+# problem 8
+# for j in range(1, 6):
+#     for i in range(2, 5):
+#         print(f"{i} x {j} = {i*j}", end="  ")
+#     print()
+# problem 9
+# rows = 4
+# cols = 6
+# for i in range(rows):
+#     for j in range(cols):
+#         if (i + j) % 2 == 0:
+#             print("*", end="")
+#         else:
+#             print(".", end="")
+#     print()
+# problem 10
+# import math
+#
+# rows = 5
+#
+# for i in range(rows):
+#     for j in range(i + 1):
+#         print(math.comb(i, j), end=" ")
+#     print()
